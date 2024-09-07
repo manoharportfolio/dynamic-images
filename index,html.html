@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manohar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Displaying multiple text and image</h1>
+    </header>
+
+    <main>
+        <!-- Section to display a single piece of text -->
+        <section id="singleText" class="section">
+            <h2>Single Text</h2>
+            <p id="textDisplay">This will display a single piece of text.</p>
+        </section>
+
+        <!-- Section to display multiple pieces of text -->
+        <section id="multipleText" class="section">
+            <h2>Multiple Texts</h2>
+            <div id="textList">
+                <p>This will display multiple pieces of text.</p>
+            </div>
+        </section>
+
+        <!-- Section to display a single image -->
+        <section id="singleImage" class="section">
+            <h2>Single Image</h2>
+            <img id="imageDisplay" src="" alt="Single Image" />
+        </section>
+
+        <!-- Section to display multiple images -->
+        <section id="multipleImages" class="section">
+            <h2>Multiple Images</h2>
+            <div id="imageGallery">
+                <!-- Multiple images will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Manohar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically insert content
+
+        // Display a single piece of text
+        document.getElementById('textDisplay').textContent = "Hello, this is a single piece of dynamic text.";
+
+        // Display multiple pieces of text
+        const multipleTexts = ["Text One", "Text Two", "Text Three"];
+        const textList = document.getElementById('textList');
+        multipleTexts.forEach(text => {
+            const p = document.createElement('p');
+            p.textContent = text;
+            textList.appendChild(p);
+        });
+
+        // Display a single image
+        document.getElementById('imageDisplay').src = "/one.png";
+
+        // Display multiple images
+        const imageGallery = document.getElementById('imageGallery');
+        const imageUrls = [
+            "/two.png",
+            "/three.png",
+            "/fourth.png"
+        ];
+        imageUrls.forEach(url => {
+            const img = document.createElement('img');
+            img.src = url;
+            imageGallery.appendChild(img);
+        });
+    </script>
+</body>
+</html>
