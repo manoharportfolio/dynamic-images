@@ -31,6 +31,12 @@ Built as part of a **college assessment** using only **HTML**, **CSS**, and **Ja
 
 ---
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
 ## 📥 Installation
 
 Follow these steps to run the project locally:
@@ -44,6 +50,3 @@ cd dynamic-images/
 
 # Open index.html in your browser
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
