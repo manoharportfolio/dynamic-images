@@ -43,3 +43,7 @@ git clone https://github.com/manoharportfolio/dynamic-images.git
 cd dynamic-images/
 
 # Open index.html in your browser
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
